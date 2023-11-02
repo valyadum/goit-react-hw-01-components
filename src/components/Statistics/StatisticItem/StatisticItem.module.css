@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 60px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.purple{
+    background-color: purple;
+}
+.green{
+    background-color: aqua;
+}
