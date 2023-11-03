@@ -1,6 +1,7 @@
 import StatisticItem from './StatisticItem/StatisticItem';
 import css from './Statistics.module.css';
 
+
 export default function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
