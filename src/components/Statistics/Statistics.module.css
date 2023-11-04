@@ -21,3 +21,10 @@ align-items: center;
 .title{
     text-transform: uppercase;
 }
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aquamarine;
+    width: 60px;
+}

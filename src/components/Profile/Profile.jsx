@@ -1,4 +1,4 @@
-import Stats from 'components/Stats/Stats';
+
 import css from './Profile.module.css';
 
 export default function Profile({ username, tag, location, avatar, stats }) {
@@ -11,11 +11,20 @@ export default function Profile({ username, tag, location, avatar, stats }) {
         <p className={css.location}>{location}</p>
       </div>
 
-      <Stats
-        followers={stats.followers}
-        views={stats.views}
-        likes={stats.likes}
-      />
+      <ul className={css.stats}>
+        <li className={css.list}>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{stats.followers}</span>
+        </li>
+        <li className={css.list}>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{stats.views}</span>
+        </li>
+        <li className={css.list}>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{stats.likes}</span>
+        </li>
+      </ul>
     </div>
   );
 }
